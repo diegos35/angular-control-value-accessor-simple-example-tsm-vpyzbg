@@ -1,0 +1,11 @@
+<h2>
+  Input
+</h2>
+<input type="text"
+       [(ngModel)]="input"
+       (ngModelChange)="onChange($event)"
+       (blur)="onTouch()">
+<h2>
+  Local Variable
+</h2>
+{{input}}

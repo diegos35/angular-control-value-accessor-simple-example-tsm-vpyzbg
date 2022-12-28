@@ -1,0 +1,23 @@
+<h1>Usage with NgModel</h1>
+
+<app-custom-input [(ngModel)]="inputOne"></app-custom-input>
+<h2>Variable in app.component</h2>
+{{inputOne}}
+
+<hr>
+
+<h1>Usage with Form Control</h1>
+<app-custom-input [formControl]="inputTwo"></app-custom-input>
+
+<h2>Variable in app.component</h2>
+{{inputTwo.value}}, control touched: {{inputTwo.touched}}
+
+<hr>
+
+<h1>Usage in Form</h1>
+
+<form [formGroup]="form" >
+  <app-custom-input formControlName="myFormControl"></app-custom-input>
+</form>
+<h2>Variable in app.component</h2>
+{{form.get('myFormControl').value}}

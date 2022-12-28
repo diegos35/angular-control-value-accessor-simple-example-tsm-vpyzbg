@@ -1,0 +1,17 @@
+$color: yellow;
+:host {
+  display: block;
+  background: $color;
+  padding: 10px;
+  position: relative;
+  &:before {
+    content: 'app.component';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: darken($color, 10%);
+    padding: 10px;
+    font-size: 10px;
+    font-family: monospace;
+  }
+}
